@@ -1,0 +1,32 @@
+{
+  "qInfos": [
+    {
+      "qId": "75805043-ee11-48d6-b7dc-7f0857ebc18f",
+      "qType": "listbox"
+    },
+    {
+      "qId": "80c1765a-96e8-414f-91b6-82612c39a184",
+      "qType": "appprops"
+    },
+    {
+      "qId": "EhVFjd",
+      "qType": "table"
+    },
+    {
+      "qId": "LoadModel",
+      "qType": "LoadModel"
+    },
+    {
+      "qId": "UMzh",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "d4ac421a-13d2-494f-a7b7-777850c685d5",
+      "qType": "sheet"
+    },
+    {
+      "qId": "eDBh",
+      "qType": "table"
+    }
+  ]
+}

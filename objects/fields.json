@@ -1,0 +1,171 @@
+[
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Field",
+    "qCardinal": 8,
+    "qTags": [
+      "$key",
+      "$hidden",
+      "$system",
+      "$text"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$FieldNo",
+    "qCardinal": 5,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Fields",
+    "qCardinal": 2,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Info",
+    "qCardinal": 1,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Rows",
+    "qCardinal": 2,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Table",
+    "qCardinal": 2,
+    "qTags": [
+      "$key",
+      "$hidden",
+      "$system",
+      "$text"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "PROVIDER_ID",
+    "qCardinal": 2,
+    "qTags": [
+      "$key",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "_ПОРТФЕЛЬ-1",
+      "ПОСЛЕДНИЙ СЕГМЕНТ НА ДАТУ"
+    ]
+  },
+  {
+    "qName": "_составнойКлючСегмента",
+    "qCardinal": 4,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "_ПОРТФЕЛЬ-1"
+    ]
+  },
+  {
+    "qName": "contract_id",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "_ПОРТФЕЛЬ-1"
+    ]
+  },
+  {
+    "qName": "ГОД",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "ПОСЛЕДНИЙ СЕГМЕНТ НА ДАТУ"
+    ]
+  },
+  {
+    "qName": "ДАТА СРЕЗА",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "_ПОРТФЕЛЬ-1"
+    ]
+  },
+  {
+    "qName": "КВАРТАЛ",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "ПОСЛЕДНИЙ СЕГМЕНТ НА ДАТУ"
+    ]
+  },
+  {
+    "qName": "Последний сегмент на дату",
+    "qCardinal": 3,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "ПОСЛЕДНИЙ СЕГМЕНТ НА ДАТУ"
+    ]
+  },
+  {
+    "qName": "СУММА ЗАДОЛЖЕННОСТИ",
+    "qCardinal": 4,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "_ПОРТФЕЛЬ-1"
+    ]
+  }
+]

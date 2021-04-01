@@ -1,0 +1,47 @@
+///$tab Main
+SET ThousandSep=' ';
+SET DecimalSep=',';
+SET MoneyThousandSep=' ';
+SET MoneyDecimalSep=',';
+SET MoneyFormat='# ##0,00 ₽;-# ##0,00 ₽';
+SET TimeFormat='h:mm:ss';
+SET DateFormat='DD.MM.YYYY';
+SET TimestampFormat='DD.MM.YYYY h:mm:ss[.fff]';
+SET FirstWeekDay=0;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='ru-RU';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='янв.;февр.;мар.;апр.;мая;июн.;июл.;авг.;сент.;окт.;нояб.;дек.';
+SET LongMonthNames='январь;февраль;март;апрель;май;июнь;июль;август;сентябрь;октябрь;ноябрь;декабрь';
+SET DayNames='пн;вт;ср;чт;пт;сб;вс';
+SET LongDayNames='понедельник;вторник;среда;четверг;пятница;суббота;воскресенье';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+[_ПОРТФЕЛЬ]:
+LOAD * INLINE [
+PROVIDER_ID, ДАТА СРЕЗА, СУММА ЗАДОЛЖЕННОСТИ, contract_id
+100, 01.04.2018, 2000000, 5
+100, 01.04.2018, 5000000, 6
+105, 01.04.2018, 2000000, 5
+105, 01.04.2018, 5000000, 6
+
+100, 01.04.2019, 400000, 5 
+100, 01.04.2019, 600000, 6 
+105, 01.04.2019, 2000000, 5
+105, 01.04.2019, 5000000, 6
+];
+
+
+
+
+LOAD
+    PROVIDER_ID&'|'&[ДАТА СРЕЗА] as _составнойКлючСегмента, 
+    PROVIDER_ID, 
+    [ДАТА СРЕЗА], 
+    [СУММА ЗАДОЛЖЕННОСТИ],
+    contract_id
+RESIDENT _ПОРТФЕЛЬ;
+
+DROP TABLE _ПОРТФЕЛЬ;
